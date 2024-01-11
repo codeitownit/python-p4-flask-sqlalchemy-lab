@@ -45,7 +45,7 @@ def zookeeper_by_id(id):
     zookeeper = Zookeeper.query.filter(Zookeeper.id == id).first()
 
     if not zookeeper:
-        response_body = '<h1>404 owner not found</h1>'
+        response_body = '<h1>404 zookeeper not found</h1>'
         response = make_response(response_body, 404)
         return response
     
